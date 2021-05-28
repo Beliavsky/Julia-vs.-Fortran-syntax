@@ -13,7 +13,7 @@ vs.
 
 `[]` vs. `()` to index array elements
 
-true and false vs. .true. and .false.
+`true` and `false` vs. `.true.` and `.false.`
 
 & vs .and.
 | vs. .or.
