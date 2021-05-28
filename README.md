@@ -8,8 +8,8 @@ Here are some notes on equivalent syntax in Julia and Fortran. Below, the Julia 
 
 vs.
 
-    `real(kind=kind(1.0d0)), allocatable :: x(:)`
-    `allocate (x(5),source=0.0d0)`
+     real(kind=kind(1.0d0)), allocatable :: x(:)
+     allocate (x(5),source=0.0d0)
 
 `[]` vs. `()` to index array elements
 
