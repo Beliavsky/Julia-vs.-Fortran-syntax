@@ -65,19 +65,19 @@ In general, Julia has a `dims` optional argument for array functions vs. `dim` i
 
 loops:
 
-    for i in 1:3
+    for i in 1:3 # Julia
         println(i," ",i^2)
     end
 
 vs.
 
-    do i=1,3
+    do i=1,3 ! Fortran
         print*,i,i**2
     end do
     
 If block:
 
-    if someVar > 10
+    if someVar > 10 # Julia
         println("someVar is totally bigger than 10.")
     elseif someVar < 10    # This elseif clause is optional.
         println("someVar is smaller than 10.")
@@ -87,7 +87,7 @@ If block:
     
 vs.
 
-    if (someVar > 10) then
+    if (someVar > 10) then ! Fortran
         print*,"someVar is totally bigger than 10."
     else if (someVar < 10) then ! This elseif clause is optional.
         print*,"someVar is smaller than 10."
@@ -97,7 +97,7 @@ vs.
 
 Exiting a loop early:
 
-     for i in 1:5
+     for i in 1:5 # Julia
           println(i)
           if i^2 > 4
                break
@@ -106,30 +106,30 @@ Exiting a loop early:
 
 vs.
 
-     do i=1,5
+     do i=1,5 ! Fortran
           print*,i
           if (i**2 > 4) exit
      end do
     
 Function definition:
 
-    function power(i,a)
+    function power(i,a) # Julia
         return i^a
     end
 
 vs.
 
-    integer function power(i,a)
+    integer function power(i,a) ! Fortran
         power = i**a
     end
 
 Arrays of strings:
 
-     x = ["boy","girl","man"]
+     x = ["boy","girl","man"] # Julia
      
 vs.
 
-     character (len=4), allocatable :: x(:)
+     character (len=4), allocatable :: x(:) ! Fortran
      x = [character (len=4) :: "boy","girl","man"]
      x = ["boy ","girl","man "] ! alternative with padding, since the character variables in a Fortran array 
                                 ! must have the same length.
