@@ -77,6 +77,10 @@ Julia `max.(x,y)` for arrays `x` and `y` is similar to Fortran `max(x,y)`, but J
 
 `dog` and `Dog` are distinct variables in Julia but not in Fortran
 
+`argmax(x)` vs. `maxloc(x,dim=1)` for 1-D array `x`
+
+`sum([true,false,true])` vs. `count([.true.,.false.,.true.])`
+
 loops in JUlia
 
     for i in 1:3
