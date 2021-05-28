@@ -81,6 +81,8 @@ Julia `max.(x,y)` for arrays `x` and `y` is similar to Fortran `max(x,y)`, but J
 
 `sum([true,false,true])` vs. `count([.true.,.false.,.true.])`
 
+For logical variables `x` and `y`, `x == y` vs. `x .eqv. y`
+
 loops in JUlia
 
     for i in 1:3
