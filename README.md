@@ -95,7 +95,7 @@ vs. Fortran
         print*,"someVar is indeed 10."
     end if
     
-One-line if in JUlia
+One-line if in Julia
 
      (i > 1) && println("i > 1") 
 
