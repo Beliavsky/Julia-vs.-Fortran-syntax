@@ -49,6 +49,10 @@ In general, Julia has a `dims` optional argument for array functions vs. `dim` i
 
 `minimum(x)` and `maximum(x)` vs. `minval(x)` and `maxval(x)`
 
+`max(2,3.1)` vs. `max(real(2),3.1)` or `max(2.0,3.1)` -- the Fortran `max` requires arguments of the same type.
+
+Julia `max.(x,y)` for arrays `x` and `y` is similar to Fortran `max(x,y)`, but Julia `max(x,y)` (without the `.`) for arrays x and y compares the first elements of the two arrays and returns the array with largest 1st element, looking at the 2nd elements etc. to break ties. Fortran has no simple equivalent.
+
 `size(x)` returns tuple, `size(x,dim)` returns scalar. Fortran `size(x)` returns a scalar. 
 `size(x)` vs. `shape(x)`
 `length(x)` vs. `size(x)`
