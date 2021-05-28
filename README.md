@@ -71,3 +71,35 @@ vs.
     do i=1,3
         print*,i,i**2
     end do
+    
+If block:
+
+    if someVar > 10
+        println("someVar is totally bigger than 10.")
+    elseif someVar < 10    # This elseif clause is optional.
+        println("someVar is smaller than 10.")
+    else                    # The else clause is optional too.
+        println("someVar is indeed 10.")
+    end
+    
+vs.
+
+    if (someVar > 10) then
+        print*,"someVar is totally bigger than 10."
+    else if (someVar < 10) then ! This elseif clause is optional.
+        print*,"someVar is smaller than 10."
+    else                    ! The else clause is optional too.
+        print*,"someVar is indeed 10."
+    end if
+    
+Function definition:
+
+    function power(i,a)
+        return i^a
+    end
+
+vs.
+
+    integer function power(i,a)
+        power = i**a
+    end
