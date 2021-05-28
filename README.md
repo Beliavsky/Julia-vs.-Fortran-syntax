@@ -56,3 +56,15 @@ In general, Julia has a `dims` optional argument for array functions vs. `dim` i
 `#` vs. `!` for comments
 
 `dog` and `Dog` are distinct variables in Julia but not in Fortran
+
+loops:
+
+`for i in 1:3
+   println(i," ",i^2)
+end`
+
+vs.
+
+`do i=1,3
+   print*,i,i**2
+end do`
