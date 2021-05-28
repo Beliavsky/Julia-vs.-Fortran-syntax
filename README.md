@@ -17,9 +17,11 @@ vs.
 
 `true` and `false` vs. `.true.` and `.false.`
 
-& vs .and.
-| vs. .or.
-! vs. .not.
+`&` vs `.and.`
+
+`|` vs. `.or.`
+
+`!` vs. `.not.`
 
 ^ vs. ** for exponentiation.
 
