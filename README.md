@@ -2,7 +2,9 @@
 
 Here are some notes on equivalent syntax in Julia and Fortran. Below, the Julia syntax appears first and the Fortran syntax appears after "vs.". Additions and corrections are welcomed -- please raise an issue.
 
-`x = 1.0` vs. `x = 1.0d0` (Julia uses 64-bit floats)
+`x = 1.0` vs. `x = 1.0d0` (Julia uses 64-bit floats by default)
+
+`x = 1.0f0` vs. `x = 1.0` (single precision) 
 
 `true` and `false` vs. `.true.` and `.false.`
 
