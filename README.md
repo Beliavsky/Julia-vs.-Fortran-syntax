@@ -24,9 +24,10 @@ vs.
 `^` vs. `**` for exponentiation.
 
 `x = rand(n)` vs. `call random_number(x)`
+
 `x = rand(n1,n2)` fills a matrix with dimensions [n1,n2]
 
-`sum(x)` like Fortran
+`sum(x)` has the same meaning in Julia and Fortran
 
 `sum(x,dims=1)` vs. `sum(x,dim=1)`
 
