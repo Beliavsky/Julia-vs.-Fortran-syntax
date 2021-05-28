@@ -41,6 +41,10 @@ vs. Fortran
 
 `sum(x,dims=[1,2])` = `sum(x)` for 2-D array
 
+If `x` is an array, `sin.(x)` vs. `sin(x)` and the same for other functions that accept scalar arguments. 
+Julia functions need a `.` before the argument to broadcast. A user-defined Fortran function or subroutine
+that accepts either scalar or array arguments is declared ELEMENTAL.
+
 In general, Julia has a `dims` optional argument for array functions vs. `dim` in Fortran,
 
 `minimum(x)` and `maximum(x)` vs. `minval(x)` and `maxval(x)`
