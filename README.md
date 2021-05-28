@@ -6,6 +6,8 @@ Here are some notes on equivalent syntax in Julia and Fortran. Below, the Julia 
 
 `const n = 3` vs. `integer, parameter :: n = 3`
 
+`const name = "Ed"` vs. `character (len=*), parameter :: name = "Ed"`
+
 `x = zeros(5)` # array of Float64 intialized to zero 
 
 vs. Fortran
