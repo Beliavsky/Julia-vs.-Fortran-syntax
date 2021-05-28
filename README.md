@@ -109,6 +109,12 @@ vs.
 vs.
 
      character (len=4), allocatable :: x(:)
+     
+Arrays of strings:
+
      x = [character (len=4) :: "boy","girl","man"]
+
+vs.
+
      x = ["boy ","girl","man "] ! alternative with padding, since the character variables in a Fortran array 
                                 ! must have the same length.
