@@ -107,6 +107,22 @@ vs.
         power = i**a
     end
 
+Exiting a loop early:
+
+     for i in 1:5
+          println(i)
+          if i^2 > 4
+               break
+          end
+     end
+
+vs.
+
+     do i=1,5
+          print*,i
+          if (i**2 > 4) exit
+     end do
+
 Arrays of strings:
 
      x = ["boy","girl","man"]
