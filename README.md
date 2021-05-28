@@ -83,7 +83,7 @@ Julia `max.(x,y)` for arrays `x` and `y` is similar to Fortran `max(x,y)`, but J
 
 For logical variables `x` and `y`, `x == y` vs. `x .eqv. y`
 
-loops in JUlia
+loops in Julia
 
     for i in 1:3
         println(i," ",i^2)
