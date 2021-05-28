@@ -94,18 +94,6 @@ vs.
     else                    ! The else clause is optional too.
         print*,"someVar is indeed 10."
     end if
-    
-Function definition:
-
-    function power(i,a)
-        return i^a
-    end
-
-vs.
-
-    integer function power(i,a)
-        power = i**a
-    end
 
 Exiting a loop early:
 
@@ -122,6 +110,18 @@ vs.
           print*,i
           if (i**2 > 4) exit
      end do
+    
+Function definition:
+
+    function power(i,a)
+        return i^a
+    end
+
+vs.
+
+    integer function power(i,a)
+        power = i**a
+    end
 
 Arrays of strings:
 
