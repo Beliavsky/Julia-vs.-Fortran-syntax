@@ -103,3 +103,12 @@ vs.
     integer function power(i,a)
         power = i**a
     end
+
+     x = ["boy","girl","man"]
+     
+vs.
+
+     character (len=4), allocatable :: x(:)
+     x = [character (len=4) :: "boy","girl","man"]
+     x = ["boy ","girl","man "] ! alternative with padding, since the character variables in a Fortran array 
+                                ! must have the same length.
