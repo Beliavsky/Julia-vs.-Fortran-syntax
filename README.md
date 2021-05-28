@@ -4,6 +4,8 @@ Here are some notes on equivalent syntax in Julia and Fortran. Below, the Julia 
 
 `x = 1.0` vs. `x = 1.0d0` (Julia uses 64-bit floats)
 
+`const n = 3` vs. `integer, parameter :: n = 3`
+
 `x = zeros(5)` # array of Float64 intialized to zero 
 
 vs. Fortran
