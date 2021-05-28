@@ -44,7 +44,7 @@ In general, Julia has a `dims` optional argument for array functions vs. `dim` i
 `length(x)` vs. `size(x)`
 
 `x = [2,3]` creates a 1-D array of integers 
-`x = [2,3.1]` creates a 1-D array of Float64, `[2.0,3.1]`. The integer value is coerced to Float64.
+`x = [2,3.1]` creates a 1-D array of Float64, `[2.0,3.1]`. The integer value is coerced to Float64. In Fortran the elements of an array constructor must have the same type.
 
 `vec(x)` converts x to 1-D array, vs. `[x]`
 
