@@ -7,7 +7,9 @@ Below the Julia syntax appears first and the Fortran syntax appears after "vs.".
 `x = 1.0` vs. `x = 1.0d0` (Julia uses 64-bit floats)
 
 `x = zeros(5)` # array of Float64 intialized to zero 
+
 vs.
+
     `real(kind=kind(1.0d0)), allocatable :: x(:)`
     `allocate (x(5),source=0.0d0)`
 
