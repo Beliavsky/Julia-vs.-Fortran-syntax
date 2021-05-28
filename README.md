@@ -1,8 +1,6 @@
 # Julia vs. Fortran syntax
-Comparison of Julia and Fortran syntax
 
-I am trying Julia and have made some notes on equivalent syntax in Julia and Fortran.
-Below the Julia syntax appears first and the Fortran syntax appears after "vs.". Additions are welcomed.
+Here are some notes on equivalent syntax in Julia and Fortran. Below, the Julia syntax appears first and the Fortran syntax appears after "vs.". Additions and corrections are welcomed -- please raise an issue.
 
 `x = 1.0` vs. `x = 1.0d0` (Julia uses 64-bit floats)
 
