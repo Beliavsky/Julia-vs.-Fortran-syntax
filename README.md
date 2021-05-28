@@ -94,6 +94,14 @@ vs. Fortran
     else                    ! The else clause is optional too.
         print*,"someVar is indeed 10."
     end if
+    
+One-line if in JUlia
+
+     (i > 1) && println("i > 1") 
+
+vs. Fortran
+
+     if (i > 1) print*,"i > 1"
 
 Exiting a loop early in Julia
 
