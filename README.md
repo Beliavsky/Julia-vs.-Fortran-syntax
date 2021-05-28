@@ -6,7 +6,7 @@ Here are some notes on equivalent syntax in Julia and Fortran. Below, the Julia 
 
 `x = zeros(5)` # array of Float64 intialized to zero 
 
-vs.
+vs. Fortran
 
      real(kind=kind(1.0d0)), allocatable :: x(:)
      allocate (x(5),source=0.0d0)
@@ -63,21 +63,21 @@ In general, Julia has a `dims` optional argument for array functions vs. `dim` i
 
 `dog` and `Dog` are distinct variables in Julia but not in Fortran
 
-loops:
+loops in JUlia
 
-    for i in 1:3 # Julia
+    for i in 1:3
         println(i," ",i^2)
     end
 
-vs.
+vs. Fortran
 
-    do i=1,3 ! Fortran
+    do i=1,3
         print*,i,i**2
     end do
     
-If block:
+If block in Julia
 
-    if someVar > 10 # Julia
+    if someVar > 10
         println("someVar is totally bigger than 10.")
     elseif someVar < 10    # This elseif clause is optional.
         println("someVar is smaller than 10.")
@@ -85,9 +85,9 @@ If block:
         println("someVar is indeed 10.")
     end
     
-vs.
+vs. Fortran
 
-    if (someVar > 10) then ! Fortran
+    if (someVar > 10) then
         print*,"someVar is totally bigger than 10."
     else if (someVar < 10) then ! This elseif clause is optional.
         print*,"someVar is smaller than 10."
@@ -95,41 +95,41 @@ vs.
         print*,"someVar is indeed 10."
     end if
 
-Exiting a loop early:
+Exiting a loop early in Julia
 
-     for i in 1:5 # Julia
+     for i in 1:5
           println(i)
           if i^2 > 4
                break
           end
      end
 
-vs.
+vs. Fortran
 
-     do i=1,5 ! Fortran
+     do i=1,5
           print*,i
           if (i**2 > 4) exit
      end do
     
-Function definition:
+Function definition in Julia
 
-    function power(i,a) # Julia
+    function power(i,a)
         return i^a
     end
 
-vs.
+vs. Fortran
 
-    integer function power(i,a) ! Fortran
+    integer function power(i,a)
         power = i**a
     end
 
-Arrays of strings:
+Arrays of strings in Julia
 
-     x = ["boy","girl","man"] # Julia
+     x = ["boy","girl","man"]
      
-vs.
+vs. Fortran
 
-     character (len=4), allocatable :: x(:) ! Fortran
+     character (len=4), allocatable :: x(:)
      x = [character (len=4) :: "boy","girl","man"]
      x = ["boy ","girl","man "] ! alternative with padding, since the character variables in a Fortran array 
                                 ! must have the same length.
