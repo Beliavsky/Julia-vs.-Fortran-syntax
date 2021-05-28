@@ -27,8 +27,11 @@ vs.
 `x = rand(n1,n2)` fills a matrix with dimensions [n1,n2]
 
 `sum(x)` like Fortran
+
 `sum(x,dims=1)` vs. `sum(x,dim=1)`
+
 `sum(x,dims=[1,2])` = `sum(x)` for 2-D array
+
 In general, Julia has a `dims` optional argument for array functions vs. `dim` in Fortran,
 
 `minimum(x)` and `maximum(x)` vs. `minval(x)` and `maxval(x)`
