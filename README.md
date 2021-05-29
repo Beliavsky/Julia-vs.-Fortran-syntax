@@ -23,6 +23,8 @@ vs. Fortran
 
 `[]` vs. `()` to index array elements
 
+`x[1:2:5]` vs. `x(1:5:2)` to get elements `[x(1),x(3),x(5)]` since Julia uses start:[step:]stop and Fortran uses start:stop[:step]
+
 `&` vs `.and.`
 
 `|` vs. `.or.`
