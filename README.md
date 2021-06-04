@@ -169,3 +169,4 @@ vs. Fortran
 Module imports:        
 `using Foo` vs. `use Foo`
 `import Foo: bar` vs. `use Foo, only: bar`
+In Fortran but not Julia, module imports must occur before the executable statements.
