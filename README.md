@@ -15,9 +15,13 @@ Here are some notes on equivalent syntax in Julia and Fortran. Below, the Julia 
 `const tf = true` vs. `logical, parameter :: tf = .true.`
 
 Fortran does not have the update operations that Julia does, so
+
 `x += 2` vs. `x = x + 2`
+
 `x -= 2` vs. `x = x - 2`
+
 `x *= 2` vs. `x = x * 2`
+
 `x /= 2` vs. `x = x / 2`
 
 `x = zeros(5)` # array of Float64 intialized to zero 
